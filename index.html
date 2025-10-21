@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<!-- Skyddar mot inbäddning, kan vilja ändra vid egen framtida inbäddning -->
+<meta http-equiv="X-Frame-Options" content="DENY">
+<!-- Förhindrar sniffning av innehållstyp -->
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<!-- Förhindrar gammal caching, kan göra uppladdn långsammare-->
+<meta http-equiv="Cache-Control" content="no-store">
+<!-- Grundläggande Content Security Policy, kan vilja tillåta ex google fonts mfl, ändra då enligt det -->
+<meta http-equiv="Content-Security-Policy"
+      content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; object-src 'none'; base-uri 'self';">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Min Portfolio</title>
+  <!--- favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Hero / Landningssida -->
+  <div class="hero">
+        <!---  språkknappar <nav class="lang-switch">
+      <a href="#" class="active">🇸🇪 Svenska</a> |
+      <a href="/en/">🇬🇧 English</a>
+    </nav> inför att lägga till språkval --->
+    <div class="overlay">
+      <h1 class="site-title">Teresa Arndtsson</h1>
+      <nav class="menu">
+        <a href="#om-mig">Om mig</a>
+        <a href="#cv">CV</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="#visste-du">Visste du att...</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Filosofisk sektion (höger) -->
+  <section class="philosophy">
+    <h2><em>Filosofisk text</em></h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id risus viverra,
+      hendrerit mauris in, vestibulum libero. Cras sed mi quis velit tristique finibus sit amet non nisl.
+      Phasellus id arcu dictum, tincidunt odio eget, faucibus erat. Aliquam erat volutpat. 
+      Sed interdum, magna vel bibendum dictum, nibh justo commodo elit, sed sollicitudin justo urna vel leo.
+      Praesent sit amet dolor in arcu mattis commodo. Sed vulputate nunc sed urna sagittis, 
+      at dignissim nisi placerat. Curabitur eu eros a ligula efficitur pulvinar. Vivamus sit amet 
+      venenatis nisl, at facilisis ipsum. Integer nec nisi a elit bibendum malesuada ut in eros.
+    </p>
+  </section>
+
+  <!-- Filosofisk sektion (vänster) -->
+  <section class="philosophy-left">
+    <h2><em>Mera filosofisk text</em></h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan odio nec nunc mattis,
+      ac convallis nisl porta. Donec nec turpis vel lorem sodales feugiat nec quis justo. Integer commodo
+      neque sed turpis egestas, at congue nulla fermentum. Suspendisse potenti. Cras dapibus purus sit amet
+      odio vestibulum, eget tincidunt risus suscipit. Curabitur dignissim velit nec libero tincidunt, quis
+      malesuada magna tincidunt. Vivamus sit amet lacus sed enim elementum placerat. Quisque non lorem 
+      ultricies, dapibus arcu ac, dignissim urna. Donec at venenatis neque. Fusce vel neque erat.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Mitt Namn. Alla rättigheter förbehållna.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+# OS-specifika filer
+.DS_Store
+Thumbs.db
+
+# Loggfiler
+*.log
+
+# Node.js moduler (om du använder npm)
+node_modules/
+
+# Byggmappar (om du har någon)
+dist/
+build/
+
+# Miljöfiler (hemliga nycklar)
+.env
+
+# Temporära filer
+*.tmp
+*.swp
+
+# Lokala inställningar
+settings.json
+*.local
+
+# privata processbeskrivande filer
+private/
