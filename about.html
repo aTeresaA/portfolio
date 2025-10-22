@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<!-- Skyddar mot inbäddning, kan vilja ändra vid egen framtida inbäddning -->
+<meta http-equiv="X-Frame-Options" content="DENY">
+<!-- Förhindrar sniffning av innehållstyp -->
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<!-- Förhindrar gammal caching, kan göra uppladdn långsammare-->
+<meta http-equiv="Cache-Control" content="no-store">
+<!-- Grundläggande Content Security Policy, kan vilja tillåta ex google fonts mfl, ändra då enligt det -->
+<meta http-equiv="Content-Security-Policy"
+      content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' blob:; script-src 'self'; object-src 'none'; base-uri 'self';">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Min Portfolio</title>
+  <!--- favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Om mig / reflection -->
+    <section id="about" class="about">
+    <div class="about-inner">
+        <h2 id="about-heading">Om mig</h2>
+
+        <!-- Visuell (poetisk) version -->
+        <div class="poem-wrap" role="article" aria-labelledby="about-heading">
+        <pre class="poem">Jag tycker om att förstå hur saker fungerar, ännu mer att förstå hur de hänger ihop.
+
+Oavsett om jag målar en tavla, skriver kod, en text eller analyserar strategi, har jag samma utgångspunkt: lyssna, observera, pröva, förbättra.
+
+Jag har rört mig mellan konst, teknik, kultur, samhälle och språk i många år. Det har inte alltid varit en rak väg, men det är i de oregelbundna stegen jag lär mig mest.
+        </pre>
+        </div>
+
+        <!-- Snabba länkar (så du kan fortsätta bygga) -->
+        <nav class="about-links" aria-label="Snabblänkar om mig">
+        <a href="#cv">titta på mitt CV</a>
+        <a href="#portfolio">tillbaka</a>
+        <a href="#contact">kontakt</a>
+        </nav>
+    </div>
+    </section>
+</body>
+</html>

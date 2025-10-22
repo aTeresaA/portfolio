@@ -9,13 +9,12 @@
 <meta http-equiv="Cache-Control" content="no-store">
 <!-- Grundläggande Content Security Policy, kan vilja tillåta ex google fonts mfl, ändra då enligt det -->
 <meta http-equiv="Content-Security-Policy"
-      content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; object-src 'none'; base-uri 'self';">
-
+      content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' blob:; script-src 'self'; object-src 'none'; base-uri 'self';">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Min Portfolio</title>
   <!--- favicon -->
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
   <link rel="stylesheet" href="css/style.css">
@@ -30,7 +29,8 @@
     <div class="overlay">
       <h1 class="site-title">Teresa Arndtsson</h1>
       <nav class="menu">
-        <a href="#om-mig">Om mig</a>
+        <!---<a href="#om-mig">Om mig</a>--->
+        <a href="about.html">Om mig</a>
         <a href="#cv">CV</a>
         <a href="#kontakt">Kontakt</a>
         <a href="#visste-du">Visste du att...</a>

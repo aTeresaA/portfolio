@@ -133,3 +133,69 @@ footer {
   text-align: justify;
   align-self: flex-start;
 }
+
+/* ====== Om mig / poem-stil ====== */
+pre.poem {
+  color: #333333;            /* Textfärg – byt till vad du vill */
+  font-family: 'Courier New', monospace; /* Passar ofta bra för pre */
+  text-indent: 0; /* säkerställer att texten börjar längst till vänster */
+  background-color: transparent; /* Ingen bakgrund om du vill ha den över hero-bild */
+  white-space: pre-wrap;     /* Gör så att långa rader bryts istället för att klippas */
+  word-wrap: break-word; /* bryt långa ord vid behov */
+  /*font-family: 'Courier New', serif; /* byt från monospace till något mjukare */
+  font-size: 1.1rem;
+  text-align: left;          /* Eller 'center' om du vill centrera dikten */
+  margin: 2rem auto;         /* Ger lite luft omkring */
+  max-width: 600px;          /* Så att det inte blir för brett */
+  line-height: 1.6;          /* Behagligt radavstånd */
+}
+
+#about-heading {
+  color: #333333;
+  font-family: 'Courier New', monospace; /* Passar ofta bra för pre */
+  font-weight: bold;
+  text-align: left;      /* behåller vänsterjusterad text */
+  margin-left: 25%;      /* flyttar rubriken en bit åt höger */
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.about-links {
+  display: flex;
+  justify-content: center;       /* centrerar länkarna horisontellt */
+  gap: 12rem;                     /* mellanrum mellan länkar */
+  margin-top: 8rem;              /* luft ovanför */
+  padding-bottom: 2rem;          /* luft nedåt */
+}
+
+.about-links a {
+  color: #aaa;                   /* ljusgrå grundfärg */
+  text-decoration: none;         /* inga understreck */
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  position: relative;            /* behövs för pseudo-elementet nedan */
+  transition: color 0.4s ease;   /* mjuk färgövergång */
+}
+
+/* Lägg till en tunn linje som tonar in under texten vid hover */
+.about-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 1px;
+  background-color: #666;        /* diskret mörkgrå linje */
+  transition: width 0.4s ease;   /* animation för linjen */
+  opacity: 0.6;
+}
+
+/* När man hovrar över länken */
+.about-links a:hover {
+  color: #666;                   /* mörkare grå textfärg */
+}
+
+/* Linjen växer fram under texten */
+.about-links a:hover::after {
+  width: 100%;
+}
