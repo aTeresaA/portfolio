@@ -43,6 +43,12 @@ body, html {
   font-size: 3rem;
   letter-spacing: 2px;
   margin-bottom: 2rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 700; /* gör namnet tydligt */
+  letter-spacing: 1px; /* lite luft mellan bokstäverna */
+  /*font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  font-weight: 600;
+  /*text-transform: uppercase;*/
 }
 
 /* Navigationsmeny */
@@ -198,4 +204,84 @@ pre.poem {
 /* Linjen växer fram under texten */
 .about-links a:hover::after {
   width: 100%;
+}
+.cv-header {
+  text-align: center;
+  margin-top: 3rem;
+  color: #333;
+}
+
+.cv-content {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.cv-section {
+  margin-bottom: 2rem;
+}
+
+.cv-section h2 {
+  color: #555;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.cv-list,
+.skills {
+  color: #333333;
+  list-style: none;
+  padding: 0;
+}
+
+.cv-list li,
+.skills li {
+  margin-bottom: 1rem;
+}
+
+.cv-period {
+  color: #777;
+  font-style: italic;
+}
+
+.cv-footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 1rem 0;
+  color: #aaa;
+}
+
+.cv-footer a {
+  color: #aaa;
+  text-decoration: none;
+  margin: 0 1rem;
+  transition: color 0.3s ease;
+}
+
+.cv-footer a:hover {
+  color: #666;
+}
+/* Mobilanpassning */
+@media (max-width: 600px) {
+  .about-inner {
+    padding: 1.5rem;
+    text-align: left; /* ser naturligare ut på mobil */
+  }
+}
+/*  pre.poem {
+    font-size: 0.95rem;  /* gör texten lite mindre på små skärmar */
+    /*line-height: 1.4;
+    white-space: pre-wrap; /* gör att rader bryts snyggt */
+
+
+ /* #about-heading {
+    text-align: center; /* rubriken kan få centreras */
+      /*margin-bottom: 1rem;
+  }*/
+
+@media (max-width: 900px) and (min-width: 601px) {
+  .about-inner {
+    padding: 2rem;
+  }
 }

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<!-- Skyddar mot inbäddning, kan vilja ändra vid egen framtida inbäddning -->
+<meta http-equiv="X-Frame-Options" content="DENY">
+<!-- Förhindrar sniffning av innehållstyp -->
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<!-- Förhindrar gammal caching, kan göra uppladdn långsammare-->
+<meta http-equiv="Cache-Control" content="no-store">
+<!-- Grundläggande Content Security Policy, kan vilja tillåta ex google fonts mfl, ändra då enligt det -->
+<meta http-equiv="Content-Security-Policy"
+      content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' blob:; script-src 'self'; object-src 'none'; base-uri 'self';">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Min Portfolio</title>
+  <!--- favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="cv-header">
+    <h1>Curriculum Vitae</h1>
+    <p>En översikt av min bakgrund, utbildning och erfarenhet</p>
+  </header>
+
+  <main class="cv-content">
+    <section class="cv-section">
+      <h2>Utbildning</h2>
+      <ul class="cv-list">
+        <li>
+          <strong>Yrkeshögskola – IT och Informationssäkerhet</strong><br>
+          <span class="cv-period">2022–2024</span><br>
+          <span>Fördjupning i testning, säkerhetsprinciper och mjukvaruutveckling.</span>
+        </li>
+        <li>
+          <strong>Universitet – Språk och Kulturvetenskap</strong><br>
+          <span class="cv-period">Tidigare</span><br>
+          <span>Studier i språk, filosofi och kommunikation.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="cv-section">
+      <h2>Erfarenhet</h2>
+      <ul class="cv-list">
+        <li>
+          <strong>Praktik / Projektarbete</strong><br>
+          <span class="cv-period">2024</span><br>
+          <span>Utveckling av webbsida och testning med fokus på IT-säkerhet och användbarhet.</span>
+        </li>
+        <li>
+          <strong>Konstnärliga och tekniska projekt</strong><br>
+          <span class="cv-period">Löpande</span><br>
+          <span>Eget skapande inom konst, skrivande och teknik.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="cv-section">
+      <h2>Färdigheter</h2>
+      <ul class="skills">
+        <li>Webbutveckling (HTML, CSS, JavaScript)</li>
+        <li>Testning & felsökning</li>
+        <li>IT-säkerhet & datasäkerhet</li>
+        <li>Språk & kommunikation</li>
+        <li>Kreativt skrivande</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="cv-footer">
+    <nav>
+      <a href="index.html">tillbaka till start</a>
+      <a href="about.html">Om mig</a>
+      <a href="#chronological">kronologisk cv</a>
+    <!---  <a href="#top">till toppen</a> --->
+    </nav>
+  </footer>
+
+</body>
+</html>
