@@ -71,14 +71,7 @@ body, html {
   letter-spacing: 1px;
 }
 
-/* Responsiv anpassning */
-@media (min-width: 700px) {
-  .menu {
-    flex-direction: row;
-    gap: 2rem;
-  }
-}
-/* Filosofisk sektion */
+/*---------- Filosofisk sektion----------- */
 .philosophy {
   background-color: #f5f5f5;
   color: #333;
@@ -140,7 +133,7 @@ footer {
   align-self: flex-start;
 }
 
-/* ====== Om mig / poem-stil ====== */
+/* ====== Om mig / poem-stil ==================================================== */
 pre.poem {
   color: #333333;            /* Textfärg – byt till vad du vill */
   font-family: 'Courier New', monospace; /* Passar ofta bra för pre */
@@ -205,6 +198,8 @@ pre.poem {
 .about-links a:hover::after {
   width: 100%;
 }
+
+/*=========== CV ==========================================================*/
 .cv-header {
   text-align: center;
   margin-top: 3rem;
@@ -262,26 +257,203 @@ pre.poem {
 .cv-footer a:hover {
   color: #666;
 }
-/* Mobilanpassning */
+html {
+  scroll-behavior: smooth; /* gör att skrollningen blir mjuk */
+}
+
+/* Stil för länken */
+.back-to-top {
+  display: block;
+  text-align: center;
+  color: #888;
+  text-decoration: none;
+  margin: 3rem 0;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.back-to-top:hover {
+  color: #333;
+}
+
+
+/*============== kontakt ============================================================*/
+ .contact-page {
+  background-color: #f7f7f7;
+  color: #222;
+  font-family: "Georgia", serif;
+  line-height: 1.6;
+  text-align: center;
+  padding: 2rem;
+}
+
+.contact-header h1 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.contact-header .intro {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 3rem;
+}
+
+.contact-methods ul {
+  list-style: none;
+  padding: 0;
+  padding-left: 0;
+}
+
+.contact-methods li {
+  margin-bottom: 1rem;
+  margin-left: 9rem; /* flyttar hela raden lite åt höger */
+  text-align: left;
+  max-width: 340px;       /* kontrollerar hur bred listan får vara */
+  margin: 0 auto;          /* centrerar hela blocket horisontellt */
+}
+
+.contact-methods a {
+  color: #555;
+  text-decoration: none;
+  border-bottom: 1px dotted #ccc;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.contact-methods a:hover {
+  color: #000;
+  border-color: #000;
+}
+
+.closing-thought blockquote {
+  margin: 3rem auto;
+  font-style: italic;
+  color: #666;
+  max-width: 600px;
+}
+
+.footer {
+  margin-top: 3rem;
+}
+
+.back-home {
+  color: #777;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.back-home:hover {
+  color: #000;
+}
+
+/*------------------*/
+.contact {
+  max-width: 600px;
+  margin: 4rem auto;
+  text-align: center;
+  font-family: "Georgia", serif;
+  color: #ddd;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.contact-intro {
+  font-style: italic;
+  color: #ccc;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list li {
+  margin: 0.75rem 0;
+}
+
+.contact-list a {
+  color: #ddd;
+  text-decoration: none;
+  border-bottom: 1px dotted #555;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.contact-list a:hover {
+  color: #fff;
+  border-color: #999;
+}
+
+
+/*========responsivitet mobil och platta================================*/
+
+/* ========= Responsivitet: mobil, platta, desktop ========= */
+
+/* === Mobil (upp till 600px) === */
 @media (max-width: 600px) {
   .about-inner {
+    max-width: 90%;
     padding: 1.5rem;
     text-align: left; /* ser naturligare ut på mobil */
   }
-}
-/*  pre.poem {
-    font-size: 0.95rem;  /* gör texten lite mindre på små skärmar */
-    /*line-height: 1.4;
+
+  .philosophy,
+  .philosophy-left {
+    max-width: 80%;
+    margin: 0 auto 1.5rem auto;
+    text-align: left;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+
+  .philosophy h2 {
+    text-align: right;
+    font-size: 1.5rem;
+  }
+
+  .philosophy-left h2 {
+    text-align: left;
+    font-size: 1.5rem;
+  }
+
+  .philosophy p,
+  .philosophy-left p {
+    font-size: 1rem;
+    max-width: 80%;
+    line-height: 1.5;
+  }
+
+  /* eventuella poem-stylingar */
+  pre.poem {
+    font-size: 1rem;
+    line-height: 1.4;
     white-space: pre-wrap; /* gör att rader bryts snyggt */
+  }
+}
 
-
- /* #about-heading {
-    text-align: center; /* rubriken kan få centreras */
-      /*margin-bottom: 1rem;
-  }*/
-
-@media (max-width: 900px) and (min-width: 601px) {
+/* === Platta (mellan 601px och 900px) === */
+@media (min-width: 601px) and (max-width: 900px) {
   .about-inner {
     padding: 2rem;
   }
+
+  .menu {
+    flex-direction: row;
+    gap: 2rem;
+  }
 }
+
+/* === Desktop (över 900px) === */
+@media (min-width: 901px) {
+  .menu {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
