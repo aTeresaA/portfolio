@@ -239,7 +239,7 @@ pre.poem {
   color: #777;
   font-style: italic;
 }
-
+/*-------------------------------------*/
 .cv-footer {
   text-align: center;
   margin-top: 3rem;
@@ -247,35 +247,42 @@ pre.poem {
   color: #aaa;
 }
 
-.cv-footer a {
+.cv-links {
+  display: flex;
+  justify-content: center; /* centrerar länkarna horisontellt */
+  gap: 6rem; /* mellanrum mellan länkarna */
+}
+
+.cv-links a {
   color: #aaa;
   text-decoration: none;
-  margin: 0 1rem;
   transition: color 0.3s ease;
 }
+
 
 .cv-footer a:hover {
   color: #666;
 }
+
 html {
   scroll-behavior: smooth; /* gör att skrollningen blir mjuk */
 }
 
 /* Stil för länken */
-.back-to-top {
-  display: block;
-  text-align: center;
-  color: #888;
-  text-decoration: none;
-  margin: 3rem 0;
-  font-size: 0.9rem;
+
+.cv-back-to-top a {
+  color: #aaa;              /* samma färg som övriga länkar */
+  text-decoration: none;    /* tar bort understrykning */
+  display: inline-block;    /* för enkel margin/padding */
+  margin: 2rem 0;
   transition: color 0.3s ease;
+  font-size: 0.9rem;
+  text-align: center;
 }
 
-.back-to-top:hover {
-  color: #333;
+.cv-back-to-top a:hover {
+  color: #666;              /* samma hover-färg som de andra länkarna */
 }
-
 
 /*============== kontakt ============================================================*/
  .contact-page {
