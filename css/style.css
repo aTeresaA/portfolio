@@ -5,7 +5,8 @@
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   height: 100%;
   font-family: 'Georgia', serif;
   color: #fff;
@@ -19,7 +20,8 @@ body, html {
   background-image: url('../images/hero1.jpg');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* ← detta ger parallaxeffekt */
+  background-attachment: fixed;
+  /* ← detta ger parallaxeffekt */
   transition: background-image 1s ease-in-out;
 }
 
@@ -44,8 +46,10 @@ body, html {
   letter-spacing: 2px;
   margin-bottom: 2rem;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: 700; /* gör namnet tydligt */
-  letter-spacing: 1px; /* lite luft mellan bokstäverna */
+  font-weight: 700;
+  /* gör namnet tydligt */
+  letter-spacing: 1px;
+  /* lite luft mellan bokstäverna */
   /*font-family: 'Trebuchet MS', Helvetica, sans-serif;
   font-weight: 600;
   /*text-transform: uppercase;*/
@@ -79,7 +83,8 @@ body, html {
   min-height: 80vh;
   display: flex;
   flex-direction: column;
-  align-items: flex-end; /* placerar texten åt höger */
+  align-items: flex-end;
+  /* placerar texten åt höger */
   justify-content: center;
 }
 
@@ -106,6 +111,7 @@ footer {
   padding: 1rem 0;
   font-size: 0.9rem;
 }
+
 /* Filosofisk sektion vänster */
 .philosophy-left {
   background-color: #eaeaea;
@@ -114,7 +120,8 @@ footer {
   min-height: 80vh;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* placerar texten åt vänster */
+  align-items: flex-start;
+  /* placerar texten åt vänster */
   justify-content: center;
 }
 
@@ -135,45 +142,67 @@ footer {
 
 /* ====== Om mig / poem-stil ==================================================== */
 pre.poem {
-  color: #333333;            /* Textfärg – byt till vad du vill */
-  font-family: 'Courier New', monospace; /* Passar ofta bra för pre */
-  text-indent: 0; /* säkerställer att texten börjar längst till vänster */
-  background-color: transparent; /* Ingen bakgrund om du vill ha den över hero-bild */
-  white-space: pre-wrap;     /* Gör så att långa rader bryts istället för att klippas */
-  word-wrap: break-word; /* bryt långa ord vid behov */
+  color: #333333;
+  /* Textfärg – byt till vad du vill */
+  font-family: 'Courier New', monospace;
+  /* Passar ofta bra för pre */
+  text-indent: 0;
+  /* säkerställer att texten börjar längst till vänster */
+  background-color: transparent;
+  /* Ingen bakgrund om du vill ha den över hero-bild */
+  white-space: pre-wrap;
+  /* Gör så att långa rader bryts istället för att klippas */
+  word-wrap: break-word;
+  /* bryt långa ord vid behov */
   /*font-family: 'Courier New', serif; /* byt från monospace till något mjukare */
   font-size: 1.1rem;
-  text-align: left;          /* Eller 'center' om du vill centrera dikten */
-  margin: 2rem auto;         /* Ger lite luft omkring */
-  max-width: 600px;          /* Så att det inte blir för brett */
-  line-height: 1.6;          /* Behagligt radavstånd */
+  text-align: left;
+  /* Eller 'center' om du vill centrera dikten */
+  margin: 2rem auto;
+  /* Ger lite luft omkring */
+  max-width: 600px;
+  /* Så att det inte blir för brett */
+  line-height: 1.6;
+  /* Behagligt radavstånd */
 }
 
 #about-heading {
   color: #333333;
-  font-family: 'Courier New', monospace; /* Passar ofta bra för pre */
+  font-family: 'Courier New', monospace;
+  /* Passar ofta bra för pre */
   font-weight: bold;
-  text-align: left;      /* behåller vänsterjusterad text */
-  margin-left: 25%;      /* flyttar rubriken en bit åt höger */
+  text-align: left;
+  /* behåller vänsterjusterad text */
+  margin-left: 25%;
+  /* flyttar rubriken en bit åt höger */
   font-size: 2rem;
   margin-top: 2rem;
 }
 
+/*-----------länkar längst ned i Om mig----------------*/
 .about-links {
   display: flex;
-  justify-content: center;       /* centrerar länkarna horisontellt */
-  gap: 12rem;                     /* mellanrum mellan länkar */
-  margin-top: 8rem;              /* luft ovanför */
-  padding-bottom: 2rem;          /* luft nedåt */
+  justify-content: center;
+  /* centrerar länkarna horisontellt */
+  gap: 12rem;
+  /* mellanrum mellan länkar */
+  margin-top: 8rem;
+  /* luft ovanför */
+  padding-bottom: 2rem;
+  /* luft nedåt */
 }
 
 .about-links a {
-  color: #aaa;                   /* ljusgrå grundfärg */
-  text-decoration: none;         /* inga understreck */
+  color: #aaa;
+  /* ljusgrå grundfärg */
+  text-decoration: none;
+  /* inga understreck */
   font-weight: 500;
   letter-spacing: 0.05em;
-  position: relative;            /* behövs för pseudo-elementet nedan */
-  transition: color 0.4s ease;   /* mjuk färgövergång */
+  position: relative;
+  /* behövs för pseudo-elementet nedan */
+  transition: color 0.4s ease;
+  /* mjuk färgövergång */
 }
 
 /* Lägg till en tunn linje som tonar in under texten vid hover */
@@ -184,14 +213,17 @@ pre.poem {
   bottom: -3px;
   width: 0%;
   height: 1px;
-  background-color: #666;        /* diskret mörkgrå linje */
-  transition: width 0.4s ease;   /* animation för linjen */
+  background-color: #666;
+  /* diskret mörkgrå linje */
+  transition: width 0.4s ease;
+  /* animation för linjen */
   opacity: 0.6;
 }
 
 /* När man hovrar över länken */
 .about-links a:hover {
-  color: #666;                   /* mörkare grå textfärg */
+  color: #666;
+  /* mörkare grå textfärg */
 }
 
 /* Linjen växer fram under texten */
@@ -239,7 +271,8 @@ pre.poem {
   color: #777;
   font-style: italic;
 }
-/*-------------------------------------*/
+
+/* -----------länkar längst ned-------------------------------------*/
 .cv-footer {
   text-align: center;
   margin-top: 3rem;
@@ -249,8 +282,10 @@ pre.poem {
 
 .cv-links {
   display: flex;
-  justify-content: center; /* centrerar länkarna horisontellt */
-  gap: 6rem; /* mellanrum mellan länkarna */
+  justify-content: center;
+  /* centrerar länkarna horisontellt */
+  gap: 6rem;
+  /* mellanrum mellan länkarna */
 }
 
 .cv-links a {
@@ -265,15 +300,19 @@ pre.poem {
 }
 
 html {
-  scroll-behavior: smooth; /* gör att skrollningen blir mjuk */
+  scroll-behavior: smooth;
+  /* gör att skrollningen blir mjuk */
 }
 
 /* Stil för länken */
 
 .cv-back-to-top a {
-  color: #aaa;              /* samma färg som övriga länkar */
-  text-decoration: none;    /* tar bort understrykning */
-  display: inline-block;    /* för enkel margin/padding */
+  color: #aaa;
+  /* samma färg som övriga länkar */
+  text-decoration: none;
+  /* tar bort understrykning */
+  display: inline-block;
+  /* för enkel margin/padding */
   margin: 2rem 0;
   transition: color 0.3s ease;
   font-size: 0.9rem;
@@ -281,11 +320,12 @@ html {
 }
 
 .cv-back-to-top a:hover {
-  color: #666;              /* samma hover-färg som de andra länkarna */
+  color: #666;
+  /* samma hover-färg som de andra länkarna */
 }
 
 /*============== kontakt ============================================================*/
- .contact-page {
+.contact-page {
   background-color: #f7f7f7;
   color: #222;
   font-family: "Georgia", serif;
@@ -314,10 +354,13 @@ html {
 
 .contact-methods li {
   margin-bottom: 1rem;
-  margin-left: 9rem; /* flyttar hela raden lite åt höger */
+  margin-left: 9rem;
+  /* flyttar hela raden lite åt höger */
   text-align: left;
-  max-width: 340px;       /* kontrollerar hur bred listan får vara */
-  margin: 0 auto;          /* centrerar hela blocket horisontellt */
+  max-width: 340px;
+  /* kontrollerar hur bred listan får vara */
+  margin: 0 auto;
+  /* centrerar hela blocket horisontellt */
 }
 
 .contact-methods a {
@@ -407,7 +450,8 @@ html {
   .about-inner {
     max-width: 90%;
     padding: 1.5rem;
-    text-align: left; /* ser naturligare ut på mobil */
+    text-align: left;
+    /* ser naturligare ut på mobil */
   }
 
   .philosophy,
@@ -440,7 +484,8 @@ html {
   pre.poem {
     font-size: 1rem;
     line-height: 1.4;
-    white-space: pre-wrap; /* gör att rader bryts snyggt */
+    white-space: pre-wrap;
+    /* gör att rader bryts snyggt */
   }
 }
 
@@ -456,6 +501,30 @@ html {
   }
 }
 
+/* Mobil: ta bort streck, byt till färgändring*/
+@media (max-width: 600px) {
+  .menu a {
+    border-bottom: none;
+  }
+
+  .menu a:hover {
+    color: #ddd;
+  }
+}
+
+/*@media (max-width: 600px) {
+  .menu a {
+    border-bottom: none;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+
+  .menu a:active {
+    color: #ddd; /* ändras när man trycker 
+    letter-spacing: 1px;
+  }
+}*/
+
 /* === Desktop (över 900px) === */
 @media (min-width: 901px) {
   .menu {
@@ -464,3 +533,52 @@ html {
   }
 }
 
+/*testning av server, cache och annat som låg i vägen. Resultat, CSP låg i vägen*/
+/*@media (max-width: 600px) {
+  body {
+    background-color: hotpink;
+  }
+}*/
+
+/* === Mobil (upp till 600px) === */
+@media (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    /* centrerar länkarna snyggt */
+  }
+
+  .menu a {
+    border-bottom: 1px solid transparent;
+    /* osynligt från början */
+  }
+
+  .menu a:hover {
+    border-bottom-color: #fff;
+    /* syns bara när du hovrar */
+  }
+
+
+  .menu a {
+    display: inline-block;
+    /* ← NYCKELN! länken blir lika bred som texten */
+    border-bottom: none;
+    /* ta bort strecket om du vill */
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+
+  .menu a:hover {
+    color: #ddd;
+    /* färgändring istället för streck */
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-links {
+    flex-direction: column; /* lägg länkarna ovanpå varandra */
+    gap: 1.5rem; /* mindre mellanrum */
+    align-items: right; /* centrera varje länk */
+  }
+}
