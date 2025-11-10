@@ -197,6 +197,7 @@ pre.poem {
   /* ljusgrå grundfärg */
   text-decoration: none;
   /* inga understreck */
+  font-family: 'Courier New'; /* Passar ofta bra för pre, samma font på hela sidan */
   font-weight: 500;
   letter-spacing: 0.05em;
   position: relative;
@@ -323,6 +324,40 @@ html {
   color: #666;
   /* samma hover-färg som de andra länkarna */
 }
+/*================Visste du att...==================================================*/
+
+/*body {
+  font-family: "Georgia", serif;
+  background: #f8f6f2;
+  color: #2d2d2d;
+  margin: 0;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 700px;
+  margin: auto;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+a {
+  display: block;
+  color: #2d2d2d;
+  text-decoration: none;
+  margin: 1rem 0;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #7a6b55;
+  text-decoration: underline;
+}
 
 /*============== kontakt ============================================================*/
 .contact-page {
@@ -356,7 +391,7 @@ html {
   margin-bottom: 1rem;
   margin-left: 9rem;
   /* flyttar hela raden lite åt höger */
-  text-align: left;
+  text-align: center;
   max-width: 340px;
   /* kontrollerar hur bred listan får vara */
   margin: 0 auto;
