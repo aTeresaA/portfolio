@@ -11,8 +11,7 @@
 # contact page is under construction and awaits more safety measures
 # - i.e. in order to avoid spam
 # hero photos still slow upload
-# erfarenhet AI instruction inspiration Beckett Krapp
-# tid AI instruction Kronos Kairo Konstnär, Dario Fo, Sartre Huic clos
-# la connaissance et le savoir, greek philosophers and Camus l'etranger
-# these texts instead of lorum ipsum
-
+# converted from png to webp, still slow when deployed?
+# erfarenhet och tiden is now more like lorum ipsum 
+# and AI generated, with my careful instruction 
+# inspired by various philosophers and authors

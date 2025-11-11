@@ -1,7 +1,7 @@
 "use strict";  // aktiverar strikt läge
 // Enkel bildväxling om du vill ha flera hero-bilder
 const hero = document.querySelector('.hero');
-const images = ['images/hero1.png', 'images/hero2.png']; // Lägg till fler senare
+const images = ['images/hero1.webp', 'images/hero2.webp']; // Lägg till fler senare
 let current = 0;
 
 setInterval(() => {
